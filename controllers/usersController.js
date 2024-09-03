@@ -3,10 +3,11 @@ const { User, Thoughts } = require("../models");
 module.exports = {
 async getUsers(req, res) {
     try {
-    const users = await User.find();
-    res.json(users);
+        const users = await User.find();
+        res.json(users);
     } catch (err) {
-    res.status(500).json(err);
+        console.log(err);
+        res.status(500).json(err);
     }
 },
 async getSingleUser(req, res) {

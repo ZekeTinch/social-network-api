@@ -1,6 +1,6 @@
-const {schema, model} = require('mongoose');
+const {Schema, model} = require('mongoose');
 
-const reactionSchema = new schema({
+const reactionSchema = new Schema({
     reactionId: {
         type: Schema.Types.ObjectId,
         default: () => new Types.ObjectId(),
@@ -20,7 +20,7 @@ const reactionSchema = new schema({
     },
 })
 
-const thoughtSchema = new schema(
+const thoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
