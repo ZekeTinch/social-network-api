@@ -104,7 +104,7 @@ module.exports = {
         }
 
 
-        res.json({ message: 'reaction successfully deleted!' });
+        res.json({ message: 'reaction successfully created!' });
     } catch (err) {
     res.status(500).json(err);
     }},
